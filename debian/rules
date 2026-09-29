@@ -1,7 +1,7 @@
 #!/usr/bin/make -f
 
 %:
-	dh $@ --with autoreconf,systemd
+	dh $@ --with autoreconf
 
 # Don't start any daemon by default. This is up to configd.
 override_dh_systemd_enable:
